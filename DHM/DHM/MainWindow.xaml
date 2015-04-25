@@ -1,0 +1,24 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:dxlc="http://schemas.devexpress.com/winfx/2008/xaml/layoutcontrol" xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors" xmlns:Properties="clr-namespace:DHM.Properties" x:Class="DHM.MainWindow"
+     
+    Title="DHM" Height="680.387" Width="1074.218" WindowStartupLocation="Manual" HorizontalAlignment="Center">
+    
+    <Grid>
+        <dxlc:TileLayoutControl Background="#FF5C3091" GroupHeaderSpace="20" ItemSpace="6" Padding="277,148,120,110" BreakFlowToFit="False" Margin="0">
+
+
+
+            <dxlc:Tile Header="Natural Reader" dxlc:TileLayoutControl.GroupHeader ="DHM" HorizontalHeaderAlignment="Right" FontSize="20" ContentSource="{Binding List}" ContentChangeInterval="0:0:2" ToolTip="Gives fun time reading your Stuff" Foreground="#FF575757" Click="Tile_Click_1" FontWeight="Bold" Margin="0,0,0,-1" />
+
+            <dxlc:Tile Header="Life Saver" Background="#FFC422F3" VerticalHeaderAlignment="Bottom" HorizontalHeaderAlignment="Right" FontSize="20" ContentSource="{Binding List2}" ContentChangeInterval="0:0:7" FontWeight="Bold" Foreground="#FF575757" ToolTip="Document Your Health Reports and accessible by your doctor." Click="Tile_Click_4"/>
+            <dxlc:Tile Header="Voice Assistance"  Background="Chartreuse" HorizontalHeaderAlignment="Right" FontSize="20" Click="Tile_Click_3" ContentSource="{Binding List1}" ToolTip="Command Your PC by the power of voice." FontWeight="Bold" Foreground="#FF575757" dxlc:FlowLayoutControl.IsFlowBreak="True" />
+            <dxlc:Tile Header="F.A.Q" HorizontalAlignment="Left" Height="150" VerticalAlignment="Top" Width="310" ContentSource="{Binding List3}" HorizontalHeaderAlignment="Right" FontSize="18" FontWeight="Bold" Foreground="#FF575757" Click="Tile_Click_2"/>
+            <!--<Label Content="DHM" Height="66" Margin="-343,-260,0,0" Width="134" Background="#FF898989" Foreground="White" FontSize="48"  VerticalAlignment="Top" HorizontalAlignment="Left" UseLayoutRounding="False"/>-->
+            
+            
+        </dxlc:TileLayoutControl>
+
+    </Grid>
+</Window>
